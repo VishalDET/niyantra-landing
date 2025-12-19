@@ -46,6 +46,7 @@ export default function Pricing() {
                         <div className="mb-6">
                             <span className="text-4xl font-bold text-gray-900">₹{isYearly ? "4,999" : "5,999"}</span>
                             <span className="text-gray-600">/month</span>
+                            <span className="block text-gray-500 text-sm mt-1">Excl. GST</span>
                         </div>
                         <ul className="space-y-4 mb-8">
                             {['Up to 500 assets', '3 user accounts', 'Basic reports', 'Email support', 'QR code generation'].map((item) => (
@@ -74,7 +75,7 @@ export default function Pricing() {
                         <div className="mb-6">
                             <span className="text-4xl font-bold text-white">₹{isYearly ? "9,499" : "11,999"}</span>
                             <span className="text-gray-300">/month</span>
-                            <span className="block text-gray-500 text-sm mt-1">excluding GST*</span>
+                            <span className="block text-gray-400 text-sm mt-1">Excl. GST</span>
                         </div>
                         <ul className="space-y-4 mb-8">
                             {['Up to 2,000 assets', '10 user accounts', 'Advanced analytics', 'Priority support', 'Custom branding', 'Bulk import/export'].map((item) => (
@@ -111,6 +112,12 @@ export default function Pricing() {
                         <a href="#contact" className="block w-full bg-gray-900 text-white text-center py-3 rounded-xl font-semibold hover:bg-gray-800 transition active:scale-95">Contact Sales</a>
                     </motion.div>
                 </div>
+            </div>
+
+            <div className="mt-12 text-center">
+                <p className="text-gray-500 bg-gray-100 inline-block px-6 py-2 rounded-full text-sm font-medium">
+                    * One-time Setup Cost applicable depending on customization & deployment requirements.
+                </p>
             </div>
         </section>
     );

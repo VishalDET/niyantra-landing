@@ -4,7 +4,7 @@ import { Atom, Flame, Wind, BarChart } from 'lucide-react';
 
 export default function TechStack() {
     return (
-        <section id="tech" className="py-20 border-t border-gray-100 bg-white">
+        <section id="technology" className="py-20 border-t border-gray-100 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <motion.p
                     initial={{ opacity: 0, y: -10 }}
